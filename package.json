@@ -1,0 +1,44 @@
+{
+  "name": "omnirag",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start-api": "node api/server.js",
+    "create-function-zip": "node scripts/createFunctionZip.js"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^3.17.3",
+    "@azure/functions": "^3.5.1",
+    "@azure/openai": "^1.0.0-beta.5",
+    "@azure/storage-blob": "^12.14.0",
+    "express": "^4.21.1",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.344.0",
+    "rdflib": "^2.2.33",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-force-graph-2d": "^1.25.3",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.5"
+  }
+}
